@@ -50,8 +50,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: build/target/wildfly-20.0.1.Final.zip
-          asset_name: wildfly-20.0.1.Final.zip
+          asset_path: wildfly-20.0.1.Final_custom.tar.gz
+          asset_name: wildfly-20.0.1.Final_custom.tar.gz
           asset_content_type: application/zip
 
 
