@@ -44,7 +44,7 @@ jobs:
           prerelease: false
 
       - name: Upload Release Asset tgz
-        id: upload-release-asset
+        id: upload-release-asset-tgz
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -55,7 +55,7 @@ jobs:
           asset_content_type: application/gzip
 
       - name: Upload Release Asset zip
-        id: upload-release-asset
+        id: upload-release-asset-zip
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
