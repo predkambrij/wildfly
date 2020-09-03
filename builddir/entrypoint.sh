@@ -5,7 +5,7 @@ pwd
 cd wildfly-core/
 mvn -Dmaven.test.skip=true install
 cd -
-mvn -Dmaven.test.skip=true install
+#mvn -Dmaven.test.skip=true install
 
 wget https://download.jboss.org/wildfly/20.0.1.Final/wildfly-20.0.1.Final.tar.gz
 mkdir repack
@@ -16,4 +16,5 @@ cp wildfly-core/server/target/wildfly-server-12.0.3.Final.jar repack/wildfly-20.
 
 cd repack
 tar czf ../wildfly-20.0.1.Final_custom.tar.gz wildfly-20.0.1.Final
+zip ../wildfly-20.0.1.Final_custom.zip -r wildfly-20.0.1.Final
 
